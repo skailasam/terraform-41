@@ -1,11 +1,11 @@
 resource "local_file" "pets" {
   filename        = var.filename
-  content         = "My dog"
+  content         = var.file-content["pet1"]
   file_permission = "0600"
 }
 
 resource "random_pet" "my-pet" {
-  prefix          = "Mrs."
-  separator       = " "
-  length          = var.length
+  prefix    = var.prefix[0]
+  separator = " "
+  length    = var.length
 }
