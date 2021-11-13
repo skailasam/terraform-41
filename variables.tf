@@ -4,6 +4,7 @@ variable "filename" {
   type        = string
   description = "Sets the filename for the pet"
 }
+
 variable "length" {
   default     = 1
   type        = number
