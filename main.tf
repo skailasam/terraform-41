@@ -1,6 +1,6 @@
 resource "local_file" "pets" {
   filename        = var.filename
-  content         = var.file-content["pet1"]
+  content         = "My pets name is ${random_pet.my-pet.id}"
   file_permission = "0600"
 }
 
